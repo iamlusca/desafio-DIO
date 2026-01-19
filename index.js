@@ -18,11 +18,12 @@ switch(true){
     case xpHeroi >= 7001 && xpHeroi <= 8000:
     nivel = "Platina"
     break
-    case xpHeroi >= 8001 && xpHeroi <=9000:
+    case xpHeroi >= 8001 && xpHeroi <= 9000:
     nivel = "Ascendente"
     break
     case xpHeroi >= 9001 && xpHeroi <= 10000:
     nivel = "Imortal"
+    break
     case xpHeroi >= 10001:
     nivel = "Radiante"
 }
