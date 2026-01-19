@@ -1,12 +1,30 @@
-let jogoPs5 = ["EA FC 26", "Red Dead 2", "Cyberpunk"]
+let nomeHeroi = "Gyomei Himejima"
+let xpHeroi = 10000
+let nivel = ""
 
-let infoJogos = [
-    ["EA FC 26", "15+", "Nota no Metacritic 7,5"],
-    ["Red Dead 2", "18+", "Nota no Metacritic 10"],
-    ["Cyberpunk", "18+", "Nota no Metacritic 7"]
-]
-
-console.log( " O jogo " + infoJogos[1][0] + " tem " + infoJogos[1][2] + " e indicação de idade " + infoJogos[1][1]),
-console.log( " O jogo " + infoJogos[0][0] + " tem " + infoJogos[0][2] + " e indicação de idade " + infoJogos[0][1]),
-console.log( " O jogo " + infoJogos[2][0] + " tem " + infoJogos[2][2] + " e indicação de idade " + infoJogos[2][1])
+switch(true){
+    case xpHeroi <= 1000:
+    nivel = "Ferro"
+    break
+    case xpHeroi  >= 1001 && xpHeroi <= 2000:
+    nivel = "Bronze"
+    break
+    case xpHeroi >= 2001 && xpHeroi <= 5000:
+    nivel = "Prata"
+    break
+    case xpHeroi >= 5001 && xpHeroi <= 7000:
+    nivel = "Ouro" 
+    break
+    case xpHeroi >= 7001 && xpHeroi <= 8000:
+    nivel = "Platina"
+    break
+    case xpHeroi >= 8001 && xpHeroi <=9000:
+    nivel = "Ascendente"
+    break
+    case xpHeroi >= 9001 && xpHeroi <= 10000:
+    nivel = "Imortal"
+    case xpHeroi >= 10001:
+    nivel = "Radiante"
+}
+        console.log("O Hashira " + nomeHeroi + " tem " + xpHeroi + " de XP e está no nível " + nivel + " por isso ele é o Hashira mais forte")
 
